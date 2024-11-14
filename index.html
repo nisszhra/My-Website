@@ -7,116 +7,193 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ara Store</title>
     <link rel="stylesheet" href="styling.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 </head>
 
 <body>
-    <header class="header">
+    <header>
         <section class="nama-bisnis">
+            <img class="logo" src="img/logo fashion.png" alt="logo">
             <h1>Ara Store</h1>
         </section>
-        <hr>
         <section class="navbar">
-            <ul>
-                <p><a href="">Home</a></p>
-                <p><a href="">About</a></p>
-                <p><a href="">Contact</a></p>
+            <div class="menu-icon" id="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="menu-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </section>
     </header>
 
     <main>
         <section class="desk-bisnis">
-            <img src="img/studio-with-props-photography.jpg" alt="baju" width="400px">
-            <p align="justify"><b>Ara Store</b> adalah butik pakaian wanita yang menawarkan koleksi busana elegan,
-                trendi, dan modern
-                untuk berbagai kesempatan. Dari gaun classic yang anggun hingga pakaian kasual yang nyaman, kami
-                menyediakan beragam pilihan untuk memenuhi kebutuhan gaya kamu dengan bahan berkualitas dan desain
-                terkini. </p>
+            <div class="desk-container">
+                <h1 class="greeting">Selamat Datang di Ara Store!</h1>
+                <p align="justify"><b>Ara Store</b> adalah butik pakaian wanita yang menawarkan koleksi busana elegan,
+                    trendi, dan modern
+                    untuk berbagai kesempatan. Dari gaun classic yang anggun hingga pakaian kasual yang nyaman, kami
+                    menyediakan beragam pilihan untuk memenuhi kebutuhan gaya kamu dengan bahan berkualitas dan desain
+                    terkini. </p>
+                <a href="#" class="btn-selengkapnya">Selengkapnya</a>
+            </div>
+            <img src="img/logo fashion.png" alt="baju">
         </section>
 
         <section class="service">
-            <h1>Layanan Kami</h1>
-            <p align="justify">Temukan beragam pilihan fashion terbaru di katalog kami yang menghadirkan koleksi lengkap
-                mulai dari pakaian kasual hingga formal, dengan desain modern yang stylish. Dapatkan dress elegan,
-                atasan trendi, hingga celana dan outerwear yang nyaman namun tetap fashionable. </p>
-            <table border="1" width="70%" height="50%" align="justify">
+            <div class="desk-service">
+                <h1>Layanan Kami</h1><br>
+                <p align="justify">Di <b>Ara Store</b> kami tidak hanya menawarkan koleksi fashion yang berkualitas,
+                    tetapi juga berbagai layanan istimewa yang dirancang khusus untuk memudahkan
+                    dan meningkatkan pengalaman belanja kamu. Kami berkomitmen untuk memberikan pelayanan terbaik, mulai
+                    dari konsultasi fashion, pembuatan pesanan khusus, hingga pengiriman yang cepat dan efisien.
+                    <br>Berikut adalah layanan unggulan yang dapat kamu nikmati:
+                </p> <br>
+            </div>
+            <table class="tabel" border="1">
                 <thead align="center">
-        </section>
-        <section class="katalog">
-            <tr class="tabel">
-                <td><b>Katalog</b></td>
-                <td><b>Deskripsi</b></td>
-                <td><b>Harga</b></td>
-            </tr>
-            </thead>
-        </section>
-
-        <tbody>
-            <tr>
-                <td>Dress</td>
-                <td>Gaun dengan potongan V-neck, bahan satin lembut, tersedia dalam warna merah dan hitam.</td>
-                <td>Rp. 450.000</td>
-            </tr>
-            <tr>
-                <td>Blouse</td>
-                <td>Atasan trendi dengan motif floral dan aksen pita di lengan, cocok untuk gaya kasual.</td>
-                <td>Rp. 220.000</td>
-            </tr>
-            <tr>
-                <td>Celana Kulot</td>
-                <td>Celana kulot high-waist, bahan linen ringan dan nyaman untuk dipakai sehari-hari.</td>
-                <td>Rp. 280.000</td>
-            </tr>
-            <tr>
-                <td>Outerwear Blazer</td>
-                <td>Blazer rajut dengan potongan minimalis, cocok untuk tampilan formal maupun santai.</td>
-                <td>Rp. 350.000</td>
-            </tr>
-            <tr>
-                <td>Sweater Oversized</td>
-                <td>Sweater oversized berbahan rajut, nyaman dan hangat, tersedia dalam warna earth tone.</td>
-                <td>Rp. 320.000</td>
-            </tr>
-        </tbody>
-        </table>
+                    <tr>
+                        <th><b>Layanan</b></th>
+                        <th><b>Deskripsi</b></th>
+                        <th><b>Biaya</b></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Konsultasi Fashion</td>
+                        <td>Membantu memilih gaya dan outfit yang sesuai dengan acara kamu</td>
+                        <td>Gratis</td>
+                    </tr>
+                    <tr>
+                        <td>Custom Order</td>
+                        <td>Pembuatan pakaian dengan desain dan ukuran khusus sesuai keinginan</td>
+                        <td>Mulai dari Rp 300.000</td>
+                    </tr>
+                    <tr>
+                        <td>Pengiriman Ekspres</td>
+                        <td>Layanan pengiriman cepat dalam 1-2 hari kerja</td>
+                        <td>Rp 20.000</td>
+                    </tr>
+                    <tr>
+                        <td>Paket Hadiah</td>
+                        <td>Opsi pembungkusan hadiah eksklusif untuk pesanan kamu</td>
+                        <td>Rp 15.000</td>
+                    </tr>
+                    <tr>
+                        <td>Diskon Member</td>
+                        <td>Potongan harga hingga 10% bagi pelanggan terdaftar</td>
+                        <td>Gratis (membership)</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
         <section class="produk">
-            <h1>Produk kami</h1>
-            <section class="card1">
-                <img src="img/dress hitam.png" alt="dress">
-                <h3>Dress</h3>
-                <p>Gaun dengan potongan V-neck, bahan satin lembut, tersedia dalam warna merah dan hitam.</p>
+            <h1 class="desk-produk">Produk Kami</h1>
+            <section class="katalog-card">
+                <div class="card">
+                    <img src="img/dress merah.png" alt="dress">
+                    <h3>Dress</h3>
+                    <p>Gaun dengan potongan V-neck, bahan satin lembut, tersedia dalam warna merah dan hitam.</p>
+                    <h4>Rp 330.000</h4>
+                </div>
+                <div class="card">
+                    <img src="img/Blouses floral.jfif" alt="blouse">
+                    <h3>Blouse Floral</h3>
+                    <p>Blouse dengan motif bunga-bunga, terbuat dari bahan chiffon ringan dan aksen pita di lengan, cocok untuk gaya kasual. </p>
+                    <h4>Rp 150.000</h4>
+                </div>
+                <div class="card">
+                    <img src="img/cardigan purple.jfif" alt="cardigan">
+                    <h3>Cardigan</h3>
+                    <p>Cardigan rajut dengan potongan longgar, memiliki detail kancing di bagian depan. Tersedia dalam warna pastel.</p>
+                    <h4>Rp 189.000</h4>
+                </div>
+                <div class="card">
+                    <img src="img/Jeans Celana Highwaist.jfif" alt="jeans">
+                    <h3>Jeans Highwaist</h3>
+                    <p>Terbuat dari bahan denim stretch memberikan sentuhan kasual yang stylish. Tersedia dalam warna denim biru dan navy.</p>
+                    <h4>Rp 210.000</h4>
+                </div>
+                <div class="card">
+                    <img src="img/Straight Leg Dress Pants.jfif" alt="kulot">
+                    <h3>Straight Pants</h3>
+                    <p>Terbuat dari bahan katun dilengkapi pinggang elastis. Tersedia dalam warna khaki, hitam dan putih.</p>
+                    <h4>Rp 120.000</h4>
+                </div>
+                <div class="card">
+                    <img src="img/rok floral.jfif" alt="rok">
+                    <h3>Midi Skirt</h3>
+                    <p>Rok midi dengan motif floral yang elegan, terbuat dari bahan satin halus. Tersedia dalam warna pastel</p>
+                    <h4>Rp 145.000</h4>
+                </div>
             </section>
         </section>
+        <source>
+    </main>
 
-        <section class="kontak kami">
-            <form action="" method="post">
-                <h1>Kontak Kami</h1>
-                <label for="">Nama</label>
-                <input type="text" placeholder="Masukan Nama..." required>
-                <br>
-                <br>
-                <label for="">Email</label>
-                <input type="text" placeholder="Masukan Email..." required>
-                <br>
-                <br>
-                <label for="">Pesan</label>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Masukan Pesan..."></textarea>
-                <br>
-                <br>
-                <button>submit</button>
-            </form>
-        </section>
+
+    <section class="kontak-kami">
+        <form action="" method="post">
+            <h1>Kontak Kami</h1>
+            <label for="">Nama</label>
+            <input type="text" placeholder="Masukan Nama..." required>
+            <br>
+            <br>
+            <label for="">Email</label>
+            <input type="text" placeholder="Masukan Email..." required>
+            <br>
+            <br>
+            <label for="">Pesan</label>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Masukan Pesan..."></textarea>
+            <br>
+            <br>
+            <button>submit</button>
+        </form>
+    </section>
     </main>
 
     <footer>
-        <section class="alamat-bisnis">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-            <p><b>Ara Store</b> | <a href="https://www.instagram.com/nisszhra_/"><i
-                        class="fa-brands fa-square-instagram"></i></a> <a href="https://wa.me/6285601726228"><i
-                        class="fa-brands fa-square-whatsapp"></i></a></p>
-            <p><b>Jl. Hubungan Tanpa Status No.100</b></p>
+        <section class="footer-container">
+            <div class="footer-logo">
+                <img src="img/logo fashion.png" alt="logo store" class="logo">
+                <p><b>Ara Store</b></p>
+                <p>Jl. Kelok Indah No. 27</p>
+                <p>Tegal, Jawa Tengah 11122</p>
+                <p>Email: info@arastore.com</p>
+                <p>Phone: +62 812-0211-1100</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Store</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Layanan Kami</h3>
+                <ul>
+                    <li><a href="#">Konsultasi Fashion</a></li>
+                    <li><a href="#">Custom Order</a></li>
+                    <li><a href="#">Pengiriman Ekspres</a></li>
+                    <li><a href="#">Paket Hadiah</a></li>
+                    <li><a href="#">Membership</a></li>
+                </ul>
+            </div>
         </section>
 
     </footer>
